@@ -1,3 +1,12 @@
+import React, { Component } from "react";
+import {
+  Education,
+  Experience,
+  Footer,
+  Header,
+  Info,
+  Preview,
+} from "./components/index";
 function App() {
   return (
     <div className="App">
