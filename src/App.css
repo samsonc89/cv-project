@@ -5,6 +5,11 @@
   text-decoration: none;
 }
 
+#root {
+  background-color: #a1a1a1;
+  min-height: 100vh;
+}
+
 .section__padding {
   padding: 3vw 6vw;
 }
@@ -17,6 +22,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  background-color: #e7e6e6;
 }
 
 .preview__container {
