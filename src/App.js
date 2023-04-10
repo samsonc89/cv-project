@@ -12,15 +12,17 @@ function App() {
   return (
     <div className="app__container">
       <Header />
-      <div className="input__container">
-        <Info />
-        <Experience />
-        <Education />
-        <Footer />
+      <div className="content__container section__padding">
+        <div className="input__container">
+          <Info />
+          <Experience />
+          <Education />
+        </div>
+        <div className="preview__container">
+          <Preview />
+        </div>
       </div>
-      <div className="preview__container">
-        <Preview />
-      </div>
+      <Footer />
     </div>
   );
 }

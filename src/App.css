@@ -8,3 +8,12 @@
 .section__padding {
   padding: 3vw 6vw;
 }
+
+.content__container {
+  display: flex;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+}
