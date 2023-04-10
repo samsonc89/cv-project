@@ -28,3 +28,8 @@
 .preview__container {
   flex: 1;
 }
+
+.component__input__heading {
+  display: flex;
+  justify-content: space-between;
+}

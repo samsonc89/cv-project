@@ -9,7 +9,7 @@ class Info extends Component {
   render() {
     return (
       <div className="info__container">
-        <div className="info__heading">
+        <div className="info__heading component__input__heading">
           <h2>Personal Info</h2>
           <button>Submit/Edit</button>
         </div>
