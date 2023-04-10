@@ -16,4 +16,9 @@
 .input__container {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.preview__container {
+  flex: 1;
 }
