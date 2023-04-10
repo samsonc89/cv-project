@@ -7,22 +7,20 @@ import {
   Info,
   Preview,
 } from "./components/index";
+import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app__container">
+      <Header />
+      <div className="input__container">
+        <Info />
+        <Experience />
+        <Education />
+        <Footer />
+      </div>
+      <div className="preview__container">
+        <Preview />
+      </div>
     </div>
   );
 }

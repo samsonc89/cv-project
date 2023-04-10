@@ -7,7 +7,7 @@ class Preview extends Component {
   }
 
   render() {
-    return <div></div>;
+    return <div>Preview</div>;
   }
 }
 
