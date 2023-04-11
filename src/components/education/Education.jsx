@@ -7,7 +7,23 @@ class Education extends Component {
   }
 
   render() {
-    return <div>Education</div>;
+    return (
+      <div className="education__container">
+        <div className="education__heading component__input__heading">
+          <h2>Education</h2>
+          <button>Submit/Edit</button>
+        </div>
+        <div className="education__input__container">
+          <input type="text" placeholder="University"></input>
+          <input type="text" placeholder="City"></input>
+          <input type="text" placeholder="Degree"></input>
+          <input type="text" placeholder="Subject"></input>
+          <input type="text" placeholder="Year Completed"></input>
+        </div>
+        <button>Delete</button>
+        <button>Add</button>
+      </div>
+    );
   }
 }
 
