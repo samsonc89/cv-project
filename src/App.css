@@ -16,6 +16,7 @@
 
 .content__container {
   display: flex;
+  gap: 50px;
 }
 
 .input__container {
@@ -27,6 +28,8 @@
 
 .preview__container {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .component__input__heading {
