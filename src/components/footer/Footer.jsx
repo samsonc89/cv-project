@@ -7,7 +7,16 @@ class Footer extends Component {
   }
 
   render() {
-    return <div>Footer</div>;
+    return (
+      <div className="footer__container">
+        <div className="footer__links">
+          <div>Github</div>
+          <div>LinkedIn</div>
+          <div>Email</div>
+        </div>
+        <div>Copyright @samsonc89</div>
+      </div>
+    );
   }
 }
 
