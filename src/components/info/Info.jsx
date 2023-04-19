@@ -17,6 +17,8 @@ class Info extends Component {
           <input type="text" placeholder="First Name"></input>
           <input type="text" placeholder="Last Name"></input>
           <input type="text" placeholder="Title"></input>
+          <input type="text" placeholder="Phone"></input>
+          <input type="text" placeholder="Email"></input>
           <input type="text" placeholder="LinkedIn"></input>
           <input type="text" placeholder="Address"></input>
           <input type="text" placeholder="Description"></input>
