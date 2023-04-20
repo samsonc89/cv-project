@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import "./info.css";
 
 class Info extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
+    const { firstName, onLastNameChanged, onFirstNameChanged } = this.props;
+
     return (
       <div className="info__container">
         <div className="info__heading component__input__heading">
@@ -14,8 +16,16 @@ class Info extends Component {
           <button>Submit/Edit</button>
         </div>
         <div className="info__input__container">
-          <input type="text" placeholder="First Name"></input>
-          <input type="text" placeholder="Last Name"></input>
+          <input
+            type="text"
+            placeholder="First Name"
+            onChange={onFirstNameChanged}
+          ></input>
+          <input
+            type="text"
+            placeholder="Last Name"
+            onChange={onLastNameChanged}
+          ></input>
           <input type="text" placeholder="Title"></input>
           <input type="text" placeholder="Phone"></input>
           <input type="text" placeholder="Email"></input>

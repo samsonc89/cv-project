@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 import "./preview.css";
+import Info from "../info/Info";
 
 class Preview extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
+    const { firstName, lastName } = this.props;
     return (
       <div className="preview__content-container">
         <div className="preview__heading">
-          <h1>First Name</h1>
+          <h1>{firstName + " " + lastName}</h1>
           <h2>Title</h2>
         </div>
         <div className="preview__content">
