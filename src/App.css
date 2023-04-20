@@ -10,29 +10,3 @@
   min-height: 100vh;
 }
 
-.section__padding {
-  padding: 3vw 6vw;
-}
-
-.content__container {
-  display: flex;
-  gap: 50px;
-}
-
-.input__container {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  background-color: #e7e6e6;
-}
-
-.preview__container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.component__input__heading {
-  display: flex;
-  justify-content: space-between;
-}
