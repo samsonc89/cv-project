@@ -12,11 +12,11 @@ import "./App.css";
 class App extends Component {
   constructor() {
     super();
-    this.state = { firstName: "", lastName: "" };
+    this.state = { firstName: "", lastName: "", title: "" };
 
     this.firstNameChange = this.firstNameChange.bind(this);
     this.lastNameChange = this.lastNameChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.titleChange = this.titleChange.bind(this);
   }
 
   firstNameChange(e) {
@@ -25,9 +25,8 @@ class App extends Component {
   lastNameChange(e) {
     this.setState({ lastName: e.target.value });
   }
-  handleSubmit(e) {
-    e.preventDefault();
-    console.log(this.state.firstName, this.state.lastName);
+  titleChange(e) {
+    this.setState({ title: e.target.value });
   }
 
   render() {
@@ -39,15 +38,13 @@ class App extends Component {
             <Info
               onFirstNameChanged={this.firstNameChange}
               onLastNameChanged={this.lastNameChange}
+              onTitleChanged={this.titleChange}
             />
             <Experience />
             <Education />
           </div>
           <div className="preview__container">
-            <Preview
-              firstName={this.state.firstName}
-              lastName={this.state.lastName}
-            />
+            <Preview personalInfo={this.state} />
           </div>
         </div>
         <Footer />

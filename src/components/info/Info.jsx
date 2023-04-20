@@ -7,13 +7,13 @@ class Info extends Component {
   }
 
   render() {
-    const { firstName, onLastNameChanged, onFirstNameChanged } = this.props;
+    const { onLastNameChanged, onFirstNameChanged, onTitleChanged } =
+      this.props;
 
     return (
       <div className="info__container">
         <div className="info__heading component__input__heading">
           <h2>Personal Info</h2>
-          <button>Submit/Edit</button>
         </div>
         <div className="info__input__container">
           <input
@@ -26,7 +26,11 @@ class Info extends Component {
             placeholder="Last Name"
             onChange={onLastNameChanged}
           ></input>
-          <input type="text" placeholder="Title"></input>
+          <input
+            type="text"
+            placeholder="Title"
+            onChange={onTitleChanged}
+          ></input>
           <input type="text" placeholder="Phone"></input>
           <input type="text" placeholder="Email"></input>
           <input type="text" placeholder="LinkedIn"></input>

@@ -8,12 +8,12 @@ class Preview extends Component {
   }
 
   render() {
-    const { firstName, lastName } = this.props;
+    const { personalInfo } = this.props;
     return (
       <div className="preview__content-container">
         <div className="preview__heading">
-          <h1>{firstName + " " + lastName}</h1>
-          <h2>Title</h2>
+          <h1>{personalInfo.firstName + " " + personalInfo.lastName}</h1>
+          <h2>{personalInfo.title}</h2>
         </div>
         <div className="preview__content">
           <div className="preview__personal-info">
