@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "./info.css";
 
 class Info extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { onLastNameChanged, onFirstNameChanged, onTitleChanged } =
       this.props;

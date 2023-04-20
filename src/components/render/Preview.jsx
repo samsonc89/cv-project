@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import "./preview.css";
-import Info from "../info/Info";
 
 class Preview extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { personalInfo } = this.props;
     return (
