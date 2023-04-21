@@ -48,7 +48,12 @@ class Info extends Component {
             placeholder="Address"
             onChange={onChanged}
           ></input>
-          <input type="text" placeholder="Description"></input>
+          <input
+            type="text"
+            name="description"
+            placeholder="Description"
+            onChange={onChanged}
+          ></input>
         </div>
       </div>
     );

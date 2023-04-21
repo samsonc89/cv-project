@@ -43,7 +43,7 @@ class Preview extends Component {
             <h3>LinkedIn</h3>
           </div>
           <div className="preview__experience">
-            <div>Description</div>
+            <div>{personalInfo.description}</div>
             <div>Experience</div>
             <div>Education</div>
           </div>
