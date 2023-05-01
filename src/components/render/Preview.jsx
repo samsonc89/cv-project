@@ -42,13 +42,21 @@ class Preview extends Component {
             </h3>
             <h3>LinkedIn</h3>
           </div>
-          <div className="preview__experience">
+          <div className="preview__details">
             <div className="preview__section">{personalInfo.description}</div>
-            <div>Company: {personalInfo.experience[0].company}</div>
-            <div>Position: {personalInfo.experience[0].position}</div>
-            <div>From: {personalInfo.experience[0].from}</div>
-            <div>To: {personalInfo.experience[0].to}</div>
-            <div>Education</div>
+            <div className="preview__experience">
+              <div>Company: {personalInfo.experience[0].company}</div>
+              <div>Position: {personalInfo.experience[0].position}</div>
+              <div>From: {personalInfo.experience[0].from}</div>
+              <div>To: {personalInfo.experience[0].to}</div>
+            </div>
+            <div className="preview__education">
+              <div>University: {personalInfo.education[0].university}</div>
+              <div>City: {personalInfo.education[0].city}</div>
+              <div>Degree: {personalInfo.education[0].degree}</div>
+              <div>Subject: {personalInfo.education[0].subject}</div>
+              <div>Year: {personalInfo.education[0].year}</div>
+            </div>
           </div>
         </div>
       </div>

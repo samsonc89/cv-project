@@ -7,7 +7,7 @@ class Education extends Component {
   }
 
   render() {
-    const { onClicked } = this.props;
+    const { onChanged, onClicked } = this.props;
     return (
       <div className="education__container">
         <div className="education__heading component__input__heading">
@@ -15,11 +15,36 @@ class Education extends Component {
           <button onClick={onClicked}>Submit/Edit</button>
         </div>
         <div className="education__input__container">
-          <input type="text" placeholder="University"></input>
-          <input type="text" placeholder="City"></input>
-          <input type="text" placeholder="Degree"></input>
-          <input type="text" placeholder="Subject"></input>
-          <input type="text" placeholder="Year Completed"></input>
+          <input
+            type="text"
+            name="university"
+            placeholder="University"
+            onChange={onChanged}
+          ></input>
+          <input
+            type="text"
+            name="city"
+            placeholder="City"
+            onChange={onChanged}
+          ></input>
+          <input
+            type="text"
+            name="degree"
+            placeholder="Degree"
+            onChange={onChanged}
+          ></input>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            onChange={onChanged}
+          ></input>
+          <input
+            type="text"
+            name="year"
+            placeholder="Year Completed YYYY"
+            onChange={onChanged}
+          ></input>
         </div>
         <button>Delete</button>
         <button>Add</button>
