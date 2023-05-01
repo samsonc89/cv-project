@@ -7,17 +7,27 @@ class Experience extends Component {
   }
 
   render() {
+    const { onChanged } = this.props;
     return (
       <div className="experience__container">
         <div className="experience__heading component__input__heading">
           <h2>Experience</h2>
-          <button>Submit/Edit</button>
         </div>
         <div className="experience__input__container">
-          <input type="text" placeholder="Company"></input>
-          <input type="text" placeholder="Position"></input>
-          <input type="text" placeholder="From MM/YY"></input>
-          <input type="text" placeholder="To MM/YY"></input>
+          <input
+            type="text"
+            name="company"
+            placeholder="Company"
+            onChange={onChanged}
+          ></input>
+          <input
+            type="text"
+            name="position"
+            placeholder="Position"
+            onChange={onChanged}
+          ></input>
+          <input type="text" name="from" placeholder="From MM/YY"></input>
+          <input type="text" name="to" placeholder="To MM/YY"></input>
           <div className="experience__input--responsbility__wrapper">
             <input type="text" placeholder="Responsibility"></input>
             <button>+</button>

@@ -15,7 +15,7 @@ class Preview extends Component {
             <h3>
               Address:
               <span>
-                <p className="personal-info__details--text">
+                <p className="preview__personal-info--details--text">
                   {" "}
                   {personalInfo.address}
                 </p>
@@ -24,7 +24,7 @@ class Preview extends Component {
             <h3>
               Phone:
               <span>
-                <p className="personal-info__details--text">
+                <p className="preview__personal-info--details--text">
                   {" "}
                   {personalInfo.phone}
                 </p>
@@ -34,7 +34,7 @@ class Preview extends Component {
             <h3>
               Email:
               <span>
-                <p className="personal-info__details--text">
+                <p className="preview__personal-info--details--text">
                   {" "}
                   {personalInfo.email}
                 </p>
@@ -43,8 +43,9 @@ class Preview extends Component {
             <h3>LinkedIn</h3>
           </div>
           <div className="preview__experience">
-            <div>{personalInfo.description}</div>
-            <div>Experience</div>
+            <div className="preview__section">{personalInfo.description}</div>
+            <div>Company: {personalInfo.experience[0].company}</div>
+            <div>Position: {personalInfo.experience[0].position}</div>
             <div>Education</div>
           </div>
         </div>

@@ -7,11 +7,12 @@ class Education extends Component {
   }
 
   render() {
+    const { onClicked } = this.props;
     return (
       <div className="education__container">
         <div className="education__heading component__input__heading">
           <h2>Education</h2>
-          <button>Submit/Edit</button>
+          <button onClick={onClicked}>Submit/Edit</button>
         </div>
         <div className="education__input__container">
           <input type="text" placeholder="University"></input>
