@@ -46,6 +46,8 @@ class Preview extends Component {
             <div className="preview__section">{personalInfo.description}</div>
             <div>Company: {personalInfo.experience[0].company}</div>
             <div>Position: {personalInfo.experience[0].position}</div>
+            <div>From: {personalInfo.experience[0].from}</div>
+            <div>To: {personalInfo.experience[0].to}</div>
             <div>Education</div>
           </div>
         </div>

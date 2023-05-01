@@ -26,8 +26,18 @@ class Experience extends Component {
             placeholder="Position"
             onChange={onChanged}
           ></input>
-          <input type="text" name="from" placeholder="From MM/YY"></input>
-          <input type="text" name="to" placeholder="To MM/YY"></input>
+          <input
+            type="text"
+            name="from"
+            placeholder="From MM/YY"
+            onChange={onChanged}
+          ></input>
+          <input
+            type="text"
+            name="to"
+            placeholder="To MM/YY"
+            onChange={onChanged}
+          ></input>
           <div className="experience__input--responsbility__wrapper">
             <input type="text" placeholder="Responsibility"></input>
             <button>+</button>
