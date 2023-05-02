@@ -32,6 +32,7 @@ class Main extends Component {
 
     this.onChange = this.onChange.bind(this);
     this.handleExperienceChange = this.handleExperienceChange.bind(this);
+    this.handleAddExperience = this.handleAddExperience.bind(this);
     this.handleEducationChange = this.handleEducationChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
@@ -61,8 +62,19 @@ class Main extends Component {
       const newEducation = prevState.education.map((educationItem) => {
         return { ...educationItem, [e.target.name]: e.target.value };
       });
-
       return { ...prevState, education: [...newEducation] };
+    });
+  }
+
+  handleAddExperience(e) {
+    this.setState({
+      experience: this.state.experience.concat({
+        university: "",
+        city: "",
+        degree: "",
+        subject: "",
+        year: "",
+      }),
     });
   }
 
@@ -76,7 +88,10 @@ class Main extends Component {
         <div className="content__container section__padding">
           <div className="input__container">
             <Info onChanged={this.onChange} />
-            <Experience onChanged={this.handleExperienceChange} />
+            <Experience
+              onChanged={this.handleExperienceChange}
+              onClicked={this.handleAddExperience}
+            />
             <Education
               onChanged={this.handleEducationChange}
               onClicked={this.handleClick}

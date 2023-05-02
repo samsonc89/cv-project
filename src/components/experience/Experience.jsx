@@ -4,10 +4,12 @@ import "./experience.css";
 class Experience extends Component {
   constructor() {
     super();
-  }
 
+    this.addExperienceInput = this.addExperienceInput.bind(this);
+  }
+  addExperienceInput() {}
   render() {
-    const { onChanged } = this.props;
+    const { onChanged, onClicked } = this.props;
     return (
       <div className="experience__container">
         <div className="experience__heading component__input__heading">
@@ -45,7 +47,7 @@ class Experience extends Component {
           </div>
         </div>
         <button>Delete</button>
-        <button>Add</button>
+        <button onClick={onClicked}>Add</button>
       </div>
     );
   }
