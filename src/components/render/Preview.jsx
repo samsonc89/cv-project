@@ -51,11 +51,11 @@ class Preview extends Component {
               <p>To: {personalInfo.experience[0].to}</p>
             </div>
             <div className="preview__education">
-              <div>University: {personalInfo.education[0].university}</div>
-              <div>City: {personalInfo.education[0].city}</div>
-              <div>Degree: {personalInfo.education[0].degree}</div>
-              <div>Subject: {personalInfo.education[0].subject}</div>
-              <div>Year: {personalInfo.education[0].year}</div>
+              <p>University: {personalInfo.education[0].university}</p>
+              <p>City: {personalInfo.education[0].city}</p>
+              <p>Degree: {personalInfo.education[0].degree}</p>
+              <p>Subject: {personalInfo.education[0].subject}</p>
+              <p>Year: {personalInfo.education[0].year}</p>
             </div>
           </div>
         </div>
